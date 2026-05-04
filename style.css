@@ -137,11 +137,51 @@ body {
     font-weight: 600;
 }
 
+.filter-btn.filter-analysts {
+    color: var(--color-analyst);
+    border-color: rgba(155, 89, 182, 0.5);
+}
+
+.filter-btn.filter-diplomats {
+    color: var(--color-diplomat);
+    border-color: rgba(46, 204, 113, 0.5);
+}
+
+.filter-btn.filter-sentinels {
+    color: var(--color-sentinel);
+    border-color: rgba(52, 152, 219, 0.5);
+}
+
+.filter-btn.filter-explorers {
+    color: var(--color-explorer);
+    border-color: rgba(241, 196, 15, 0.6);
+}
+
 .filter-btn:hover,
 .filter-btn.active {
     background: rgba(255, 255, 255, 0.17);
     border-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-1px);
+}
+
+.filter-btn.filter-analysts.active {
+    background: rgba(155, 89, 182, 0.15);
+    border-color: var(--color-analyst);
+}
+
+.filter-btn.filter-diplomats.active {
+    background: rgba(46, 204, 113, 0.15);
+    border-color: var(--color-diplomat);
+}
+
+.filter-btn.filter-sentinels.active {
+    background: rgba(52, 152, 219, 0.15);
+    border-color: var(--color-sentinel);
+}
+
+.filter-btn.filter-explorers.active {
+    background: rgba(241, 196, 15, 0.15);
+    border-color: var(--color-explorer);
 }
 
 /* MBTI Groups */
