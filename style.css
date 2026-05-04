@@ -88,9 +88,16 @@ body {
     font-weight: 800;
     letter-spacing: 2px;
     background: linear-gradient(90deg, #fff, #a0a0a0);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
+}
+
+.top-note {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
 }
 
 /* Main Layout */
