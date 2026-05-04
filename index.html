@@ -1,0 +1,61 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI Personalities - 16タイプ性格診断ガイド</title>
+    <meta name="description" content="MBTIの16タイプ（分析家、外交官、番人、探検家）を美しく解説するガイドサイトです。あなたの性格タイプについて深く知ってみましょう。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <!-- Background Animated Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <header class="glass-header">
+        <h1>MBTI Personalities</h1>
+        <p>16タイプ性格診断の完全ガイド</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p>人間の性格は16のタイプに分類できるとされています。それぞれの強みや特徴を知ることで、自己理解を深め、より豊かな人間関係を築きましょう。</p>
+        </section>
+
+        <section class="filter-section">
+            <div class="filter-row">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="analysts">分析家</button>
+                <button class="filter-btn" data-filter="diplomats">外交官</button>
+                <button class="filter-btn" data-filter="sentinels">番人</button>
+                <button class="filter-btn" data-filter="explorers">探検家</button>
+            </div>
+        </section>
+
+        <div id="mbti-container"></div>
+    </main>
+
+    <!-- Modal for Detailed View -->
+    <div id="mbti-modal" class="modal hidden">
+        <div class="modal-content glass-card">
+            <button class="close-btn" id="close-modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="modal-id">INTJ</h2>
+                <h3 id="modal-name">建築家</h3>
+            </div>
+            <div class="modal-body">
+                <p id="modal-desc" class="modal-desc"></p>
+                <div class="traits-container">
+                    <h4>特徴</h4>
+                    <ul id="modal-traits" class="traits-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
